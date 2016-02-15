@@ -2,4 +2,4 @@ Super simple beep program
 cc0 Stephen Wiley
 USAGE: beep freq duration
 freq is in HZ duration is in seconds, all arguments are floating point decimal
-used for mail notifications and stuff. It needs alsa and will only work on linu.
+used for mail notifications and stuff. It needs alsa and will only work on linux.
