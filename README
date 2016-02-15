@@ -10,5 +10,5 @@ As someone with no write access /usr/lcal/bin
   ./inst.sh
 INSTALLING
   sudo ./inst.sh
-CONFIGURING ALPINE TO USE IT:
-TODO
+USING IT TO BEEP ON NEW MAIL:
+Replace the command in your crontab with a modified version of mail.sh
