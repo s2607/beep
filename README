@@ -4,7 +4,7 @@ USAGE: beep freq duration
 freq is in HZ duration is in seconds, all arguments are floating point decimal
 used for mail notifications and stuff. It needs alsa and will only work on linux.
 DOWNLOADING AND COMPILING: 
-As someone with no write access /usr/lcal/bin
+As someone with write access to /usr/lcal/bin
   git clone https://github.com/s2607/beep.git
   cd beep
   ./inst.sh
