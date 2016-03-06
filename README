@@ -1,14 +1,19 @@
 Super simple beep program
 cc0 Stephen Wiley
-USAGE: beep freq duration
-freq is in HZ duration is in seconds, all arguments are floating point decimal
-used for mail notifications and stuff. It needs alsa and will only work on linux.
+It's expected to be used for mail and command completion notification, it needs alsa and aplay to work.
+
+USAGE:
+   beep freq duration
+freq is in HZ, duration is in seconds. All arguments are floating point decimal
+
 DOWNLOADING AND COMPILING: 
-As someone with write access to /usr/lcal/bin
+As someone with no write access to /usr/lcal/bin
   git clone https://github.com/s2607/beep.git
   cd beep
   ./inst.sh
+
 INSTALLING
   sudo ./inst.sh
+
 USING IT TO BEEP ON NEW MAIL:
 Replace the command in your crontab with a modified version of mail.sh
