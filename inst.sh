@@ -1,2 +1,2 @@
 #!/bin/sh
-cc -lm ./beep.c -o beep && cp ./beep /usr/local/bin/
+cc ./beep.c -lm -o beep && cp ./beep /usr/local/bin/
