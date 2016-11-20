@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<math.h>
 #define R 8000
+#define PI 3.14159
 double fr;
 void dieif(char *m, int r) {
 	if(r){
@@ -10,13 +11,13 @@ void dieif(char *m, int r) {
 	}
 }
 float f(int x) {
-		return(sin(x*(fr/R))*100);
+		return(sin(x*(fr/R)*2*PI)*100);
 }
 int main(int argc,char **argv) {
 	double l;
 	int i=0;
-	dieif("Usage: beep 4500 0.05",(argc!=3));
-	FILE *fp=popen("aplay -q -t raw >/dev/null","w");
+	dieif("Usage: beep 440 0.05 \n#This beeps A4 for half a tenth of a second.",(argc!=3));
+	FILE *fp=popen("aplay -r 8000 -q -t raw >/dev/null","w");
 	dieif("crap",!fp);
 	fr=atof(*(argv+1));
 	l=atof(*(argv+2));

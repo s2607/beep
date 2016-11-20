@@ -6,6 +6,8 @@ USAGE:
    beep freq duration
 freq is in HZ, duration is in seconds. All arguments are floating point decimal
 
+note: in older versions the frequency was off by a factor of 2pi, this has been corrected and the output was verified with a spectograph.
+
 DOWNLOADING AND COMPILING: 
 As someone with no write access to /usr/lcal/bin
   git clone https://github.com/s2607/beep.git
